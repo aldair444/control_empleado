@@ -123,7 +123,7 @@ public class EmpleadoExporterPDF {
 		RestTemplate restTemplate = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.MULTIPART_FORM_DATA);
-		headers.add("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiI0MDk3MDdmOC03NjkwLTQxYjMtYjM3OS1hMDhkNzI1NzY1MDEiLCJlbWFpbCI6ImFsZGFpcmJhcm9qYXMzNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGluX3BvbGljeSI6eyJyZWdpb25zIjpbeyJpZCI6IkZSQTEiLCJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MX0seyJpZCI6Ik5ZQzEiLCJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MX1dLCJ2ZXJzaW9uIjoxfSwibWZhX2VuYWJsZWQiOmZhbHNlLCJzdGF0dXMiOiJBQ1RJVkUifSwiYXV0aGVudGljYXRpb25UeXBlIjoic2NvcGVkS2V5Iiwic2NvcGVkS2V5S2V5IjoiYjVhYzk5Y2UyNmFlODE0NzEyMWYiLCJzY29wZWRLZXlTZWNyZXQiOiI0YWMyMzVmMzBhOTNjN2ExNzNlNzU2ODM3ZWJjZmIxYjMzMjc0M2E1YzNmYTA5M2ZiNWQ0YTZiOWNlZjY1MDdiIiwiaWF0IjoxNzEyNzg4Njk4fQ.dyGR4HTYqB4CHPi-5VD6HON6ikGHEaMw8JWs_t6VAyI");
+		headers.add("Authorization", "Bearer ");
 	
 		LinkedMultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
 		body.add("file", new FileSystemResource(pathArchivo));
